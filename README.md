@@ -9,7 +9,6 @@ This project automates the process of collecting, cleaning, and processing data 
 - **Python**: For web scraping and data processing.
 - **Apache Airflow**: Workflow orchestration and task scheduling.
 - **Docker**: Containerization of the Airflow setup.
-- **PostgreSQL**: For intermediate data storage and management.
 - **Azure Data Lake Storage**: Data storage for raw and processed data.
 - **Azure Data Factory**: For orchestrating the movement of data.
 - **Azure Databricks**: For further data exploration and processing.
@@ -19,7 +18,7 @@ This project automates the process of collecting, cleaning, and processing data 
 ## Project Workflow
 ### 1. Web Scraping (Data Ingestion)
 - The pipeline begins with **Apache Airflow** running a Python-based web scraper to extract data about football stadiums from Wikipedia.
-- The scraping task collects relevant information (e.g., stadium name, location, capacity, etc.) and stores the raw data in **PostgreSQL** on an **Azure Linux Virtual Machine**.
+- The scraping task collects relevant information (e.g., stadium name, location, capacity, etc.) on an **Azure Linux Virtual Machine**.
 
 ### 2. Data Cleaning & Transformation
 - The extracted data is cleaned and transformed using **Python** scripts within **Airflow**.
